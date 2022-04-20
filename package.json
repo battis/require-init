@@ -1,29 +1,33 @@
 {
-  "devDependencies": {
-    "@tsconfig/recommended": "^1.0.1",
-    "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.5",
-    "jest": "^27.4.5",
-    "ts-jest": "^27.1.2",
-    "typescript": "^4.5.4"
-  },
   "name": "@battis/require-init",
-  "version": "1.0.1",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Seth Battis <seth@battis.net>",
+  "license": "GPL-3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc --build tsconfig.dist.json --verbose",
-    "test": "jest --config=jest.config.js"
-  },
+  "homepage": "https://github.com/battis/require-init#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/battis/require-init.git"
   },
-  "author": "Seth Battis <seth@battis.net>",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/battis/require-init/issues"
   },
-  "homepage": "https://github.com/battis/require-init#readme",
-  "description": ""
+  "scripts": {
+    "build": "webpack",
+    "test": "jest --config=jest.config.js"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.5.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
